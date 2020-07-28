@@ -1,0 +1,91 @@
+.card-bg {
+    background: url('../img/bg-nav.jpg');
+
+    &-link {
+        color: $white;
+
+        &:hover {
+            color: $gold;
+        }
+    }
+}
+
+.card-bank-info {
+    .card {
+        &-bank {
+            &-logo {
+                width: 80px;
+                height: 80px;
+                padding: 0.5rem;
+                border-radius: .5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @include media-breakpoint-down(sm) {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            &-userinfo {
+                @include media-breakpoint-down(sm) {
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+
+.card-refund {
+    .card {
+        &-body {
+            padding: 0.5rem;
+        }
+
+        &-title {
+            @include media-breakpoint-down(sm) {
+                font-size: .7em;
+            }
+        }
+
+        &-footer {
+            padding: .25rem;
+            border-top-width: 0;
+            background-color: rgba(black, .1);
+
+            @include media-breakpoint-down(sm) {
+                font-size: .7em;
+            }
+        }
+    }
+}
+
+.card-history {
+    .card {
+        &-header {
+            padding: 0;
+            border-width: 0;
+            background-color: transparent;
+            overflow: hidden;
+
+            .nav {
+                &-link {
+                    background-color: $primary;
+                    color: $white;
+                    border-width: 0;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+
+                    &.active {
+                        background-color: darken($primary, 10%);
+                    }
+                }
+            }
+        }
+    }
+}

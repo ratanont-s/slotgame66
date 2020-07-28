@@ -1,0 +1,161 @@
+#indexPage {
+
+    #slot {
+        .card {
+            border-width: 0;
+            box-shadow: $box-shadow-sm;
+            overflow: hidden;
+
+            &-img {
+                &-overlay {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5rem;
+                    background-color: rgba(black, .7);
+                    opacity: 0;
+                    @include transition($transition-base);
+                }
+            }
+
+            &:hover {
+                .card {
+                    &-img {
+                        &-overlay {
+                            opacity: 1;
+                            @include transition($transition-base);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #sa {
+        .card {
+            border-width: 0;
+            box-shadow: $box-shadow-sm;
+            overflow: hidden;
+            @include gradient-x($start-color: darken($gold, 20%), $end-color: $gold, $start-percent: 0%, $end-percent: 100%);
+
+            &-img {
+                &-overlay {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5rem;
+                    background-color: rgba(black, .7);
+                    opacity: 0;
+                    @include transition($transition-base);
+                }
+            }
+
+            &-title {
+                padding: .25rem;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: .75em;
+                }
+            }
+
+            &:hover {
+                .card {
+                    &-img {
+                        &-overlay {
+                            opacity: 1;
+                            @include transition($transition-base);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #sexy {
+        .card {
+            border-width: 0;
+            overflow: hidden;
+            box-shadow: $box-shadow-sm;
+            @include gradient-x($start-color: darken($purple, 20%), $end-color: $purple, $start-percent: 0%, $end-percent: 100%);
+
+            &-img {
+                &-overlay {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5rem;
+                    background-color: rgba(black, .7);
+                    opacity: 0;
+                    @include transition($transition-base);
+                }
+            }
+
+            &-title {
+                color: $white;
+                padding: .25rem;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: .75em;
+                }
+            }
+
+            &:hover {
+                .card {
+                    &-img {
+                        &-overlay {
+                            opacity: 1;
+                            @include transition($transition-base);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #ag {
+        .card {
+            border-width: 0;
+            overflow: hidden;
+            box-shadow: $box-shadow-sm;
+            @include gradient-x($start-color: $orange, $end-color: $sky, $start-percent: 0%, $end-percent: 100%);
+
+            &-img {
+                &-overlay {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5rem;
+                    background-color: rgba(black, .7);
+                    opacity: 0;
+                    @include transition($transition-base);
+                }
+            }
+
+            &-title {
+                padding: .25rem;
+                color: $white;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: .75em;
+                }
+            }
+
+            &:hover {
+                .card {
+                    &-img {
+                        &-overlay {
+                            opacity: 1;
+                            @include transition($transition-base);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right-bar {
+        position: fixed;
+        top: 25%;
+        right: 0;
+    }
+}

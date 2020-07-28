@@ -1,0 +1,20 @@
+@import './index';
+
+#banner {
+    padding: 1rem 0 2rem;
+    background: url('../../assets/img/bg-banner.jpg') no-repeat center top/cover;
+
+    @include media-breakpoint-up(md) {
+        padding: 6rem 0 2rem;
+    }
+}
+
+.text-title-page {
+    background: url('../../assets/img/bg-nav.jpg') repeat-x left center/auto 100%;
+    color: $white;
+    padding: 1rem .25rem;
+    margin: -1rem -1rem 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-family: $font-sd;
+}

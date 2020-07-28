@@ -1,0 +1,56 @@
+.nav-deposit {
+    .nav {
+        &-link {
+            border-radius: .75rem;
+
+            &:not(.active) {
+                filter: grayscale(1);
+            }
+        }
+
+        &-kbank {
+            background-color: $kbank;
+
+            &.active {
+                background-color: $kbank;
+            }
+        }
+
+        &-truewallet {
+            background: $truewallet-bg;
+
+            &.active {
+                background: $truewallet-bg;
+            }
+        }
+    }
+}
+
+.nav-game {
+    background: url('../img/bg-nav.jpg');
+    border-radius: .75rem;
+
+    .nav {
+        &-link {
+            &-img-active:not(.active) {
+                display: none;
+            }
+
+            &.active {
+                background-color: transparent;
+
+                .nav-link-img {
+                    display: none;
+
+                    &-active {
+                        display: block;
+                    }
+                }
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

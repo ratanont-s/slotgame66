@@ -1,0 +1,28 @@
+// Colors
+$primary: #cd0305;
+$gold: #f1d382;
+$purple: #ad4278;
+$orange: #ef5e21;
+$sky: #3296c1;
+$refund-green:#16A085;
+$refund-red:#E74C3C;
+$refund-gray:#7F8C8D;
+
+$kbank:#138f2d;
+$truewallet-bg:linear-gradient(90deg, rgba(222, 222, 222, 1) 0%, rgba(245, 246, 247, 1) 100%);
+$truewallet:#F5831E;
+
+$body-bg: #cccccc;
+
+$theme-colors: ("gold": $gold, "purple": $purple, "kbank": $kbank, "truewallet": $truewallet, "refund-green":$refund-green, "refund-red":$refund-red, "refund-gray":$refund-gray);
+
+// Fonts
+$font-family-base: 'Anakotmai';
+$font-sd: 'sd chokdee';
+$enable-responsive-font-sizes: true;
+$link-hover-decoration: none;
+
+// Cards
+$card-border-radius: .75rem;
+
+$enable-gradients: true;

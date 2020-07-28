@@ -1,0 +1,25 @@
+// GD
+
+@each $color,
+$value in $theme-colors {
+    .btn-gd-#{$color} {
+        border-width: 0;
+        color: color-yiq($value);
+        @include gradient-x($start-color: darken($value, 20%), $end-color: $value, $start-percent: 0%, $end-percent: 100%);
+
+        @include hover() {
+            color: color-yiq($value);
+            filter: brightness(1.1);
+        }
+    }
+}
+
+.btn-orange-sky {
+    border-width: 0;
+    color: color-yiq($orange);
+    @include gradient-x($start-color: $orange, $end-color: $sky, $start-percent: 0%, $end-percent: 100%);
+
+    @include hover() {
+        color: color-yiq($orange);
+    }
+}

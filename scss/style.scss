@@ -1,0 +1,27 @@
+@import './fonts';
+@import './variables';
+@import './bootstrap/bootstrap.scss';
+
+@import './header', './footer';
+@import './buttons', './cards', './navs';
+
+@import './pages/pages.scss';
+
+main {
+
+    .main {
+        &-content {
+            margin-top: -35px;
+            position: relative;
+            background: linear-gradient(0deg, rgba(82, 82, 82, 0) 0%, rgba(255, 255, 255, 1) 60%);
+            padding: 1rem;
+            box-shadow: 0 -20px 20px 0 rgba(black, .2);
+            border-radius: 1rem;
+
+            &-member {
+                background: white;
+                max-width: 800px;
+            }
+        }
+    }
+}
