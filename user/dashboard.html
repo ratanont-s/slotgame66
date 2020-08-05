@@ -211,7 +211,27 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js"></script>
+    <script>
+        Swal.mixin({
+            confirmButtonText: 'ตกลง',
+            progressSteps: ['1', '2', '3']
+        }).queue([{
+            title: 'เปิดให้บริการแล้ววันนี้',
+            html: '<img src="../assets/img/1.gif" class="img-fluid mb-3" />' +
+                '<a href="../game.html">คลิกเข้าเล่นเกมส์ได้ที่นี่</a> '
+        }, {
+            title: 'กรุณาตรวจสอบบัญชีก่อนโอนเงิน',
+            html: '<img src="../assets/img/2.jpeg" class="img-fluid mb-3" />' +
+                '<a href="./deposit.html">คลิกที่นี่เพื่อเช็คบัญชี</a> '
+        }, {
+            title: 'กรุณาตรวจสอบบัญชีก่อนเติมเงิน',
+            html: '<img src="../assets/img/3.jpeg" class="img-fluid mb-3" />' +
+                '<p>ลูกค้าที่ฝากช่องทาง Turewallet เช็คเบอร์หน้าเว็ปทุกครั้งก่อนโอนยอด หรือ ' +
+                'สอบถามเบอร์ที่เปิดอยู่ได้ทาง Line : @slotgame66 (มี@ข้างหน้าด้วยนะคะ) คลิกแอดไลน์</p>' +
+                '<a href="./deposit.html">หรือคลิกที่นี่เพื่อตรวจสอบ</a>'
+        }, ])
+    </script>
 </body>
 
 </html>
